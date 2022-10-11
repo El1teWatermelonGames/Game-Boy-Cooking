@@ -80,19 +80,4 @@ public class NewTask : MonoBehaviour
             Debug.Log("game over: "+PC.reasonForLoss);
         }
     }
-
-    void clearTasks(){
-        active1 = false;
-        active2 = false;
-        active3 = false;
-        key1 = -1;
-        key2 = -1;
-        key3 = -1;
-        if(Icons[0] != EmptyIconField) Destroy(Icons[0]);
-        if(Icons[1] != EmptyIconField) Destroy(Icons[1]);
-        if(Icons[2] != EmptyIconField) Destroy(Icons[2]);
-        Icons[0] = EmptyIconField;
-        Icons[1] = EmptyIconField;
-        Icons[2] = EmptyIconField;
-    }
 }
